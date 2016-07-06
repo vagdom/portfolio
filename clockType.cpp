@@ -45,4 +45,34 @@ void clockType::printTime() const
 void clockType::incrementHours()
 {
     hr++;
+    if(hr > 23)
+       hr = 0;
 }
+
+void clockType::incrementMinutes()
+{
+    min++;
+    if(min > 59)
+      {
+         min = 0;
+         incrementHours();
+      }     
+}
+
+void clockType::incrementSeconds()
+{
+    sec++;
+    if(sec > 59)
+      {
+         sec = 0;
+         incrementMinutes();
+      }     
+}
+
+bool clockType::equalType(const clockType& otherClock) const
+{
+    return(    hr == otherClock.hr
+           && min == otherClock.min
+           && sec == otherClock.sec);
+}
+
