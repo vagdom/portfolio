@@ -20,3 +20,29 @@ void clockType::setTime(int hours, int minutes, int seconds)
        
 }
 
+void clockType::getTime(int& hours, int& minutes, int& seconds)
+{
+    hours = hr;
+    minutes = min;
+    seconds = sec;
+}
+
+void clockType::printTime() const
+{
+    if(hr < 10)
+       cout << "0";
+    cout << hr << ":";
+    
+    if(min < 10)
+       cout << "0";
+    cout << min << ":";
+    
+    if(sec < 10)
+       cout << "0";
+    cout << sec << ":";
+}
+
+void clockType::incrementHours()
+{
+    hr++;
+}
