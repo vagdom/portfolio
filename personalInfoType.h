@@ -1,0 +1,6 @@
+class personalInfoType
+{
+  public:
+  private:
+};  
+  
