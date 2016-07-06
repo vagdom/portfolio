@@ -1,6 +1,11 @@
 //From: Data Structures Using C++
 //Author: D. S. Malik
 
+#include <iostream>
+#include "clockType.h"
+
+using namespace std;
+
 void clockType::setTime(int hours, int minutes, int seconds)
 {
     if(0 <= hours && hours < 24)
