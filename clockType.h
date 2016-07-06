@@ -48,6 +48,20 @@ public:
     //Postcondition: Returns true if this time is
     //               equal to otherClock; otherwise,
     //               returns false.
+  
+  clockType(int hours, int minutes, int seconds)
+    //Constructor with parameters
+    //Postcondition: hr = hours; min = minutes;
+    //               sec = seconds.
+    //The constructor checks whether the values of
+    //hours, minutes, and seconds are valid. If a
+    //value is invalid, the default value 0 is 
+    //assigned.
+    
+  clockType()
+  //Default constructor
+  //The time is set to the default values.
+  //Postcondition: hr = 0; min = 0; sec = 0
 
 private:
   int hr;        //store the hours
