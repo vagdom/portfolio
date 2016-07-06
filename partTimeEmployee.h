@@ -1,6 +1,8 @@
 //From: Data Structures Using C++
 //Author: D. S. Malik
 
+#include "personType.h"
+
 class partTimeEmployee: personType
 {
   public:
