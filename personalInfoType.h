@@ -27,6 +27,10 @@ class personalInfoType
           //               lastName = last;
           //               dDay = day; dMonth = month;
           //               dYear = year; personID = ID 
+        
   private:
+      personType name;
+      dateType bDay;
+      int personID;
 };  
   
