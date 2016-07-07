@@ -1,10 +1,26 @@
 //From: Data Structures Using C++
 //Author: D. S. Malik
 
+#include <iostream>
+
+using namespace std;
+
 void personType::print() const
 {
     cout << firstName << " " << lastName;
 } 
+
+personType& personType::setFirstName(string first)
+{
+    firstName = first;
+    return *this;
+}
+
+personType& personType::setLastName(string last)
+{
+    lastName = last;
+    return *this;
+}
 
 void personType::setName(string first, string last)
 {
