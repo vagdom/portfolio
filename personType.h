@@ -12,6 +12,18 @@ public:
   //to the parameters.
   //Postcondition: first = firstName; last = lastName
   
+  personType& setFirstName(string first)
+  //Function to set the first name.
+  //Postcondition: firstName = first
+  //               After setting the first name, a reference
+  //               to the object, that is, the address of the
+  //               object, is returned.
+  
+  //Postcondition: firstName = first; 
+          //               lastName = last;
+          //               dDay = day; dMonth = month;
+          //               dYear = year; personID = ID
+  
   void getName(string& first, string& last);
   //Function to return firsttName and lastName via
   //the parameters.
