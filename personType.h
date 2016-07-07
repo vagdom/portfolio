@@ -19,6 +19,13 @@ public:
   //               to the object, that is, the address of the
   //               object, is returned.
   
+  personType& setLastName(string last)
+  //Function to set the last name.
+  //Postcondition: lastName = last
+  //               After setting the last name, a reference
+  //               to the object, that is, the address of the
+  //               object, is returned.
+  
   void getName(string& first, string& last);
   //Function to return firsttName and lastName via
   //the parameters.
