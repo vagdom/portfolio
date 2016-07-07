@@ -1,8 +1,15 @@
+//From: Data Structures Using C++
+//Author: D. S. Malik
+
+#include <iostream>
+
+using namespace std;
+
 personalInfoType::personalInfoType(string first, string last,
                                    int month, int day, int year, int ID)
                   : name(first, last), bDay(month, day, year)
 {
-     
+      personID = ID;  
 
 }
 
