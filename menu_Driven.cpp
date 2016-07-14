@@ -67,3 +67,33 @@ int main()
   return 0;
                
 }
+
+//********************************************************************
+//Definition of function showMenu which displays the menu            *
+//********************************************************************
+
+void showMenu()
+{
+  
+  cout << "\n\n\tHealth Club Membership Menu\n\n"
+       << "1. Standard Adult Membership\n"
+       << "2. Child Membership\n"
+       << "3. Senior Citizen Program\n"
+       << "4. Quit the Program\n\n"
+       << "Enter your choice: ";
+       
+}
+
+//********************************************************************
+//Definition of function showFees. The memberRate parameter holds    *
+//the monthly membership rate and the months parameter holds the     *
+//number of months. The function display the total charges.          *
+//********************************************************************
+
+void showFees(double memberrate, int months)
+{
+ 
+  cout << "The total charges are $"
+       << (memberRate * months) << endl;
+       
+}
