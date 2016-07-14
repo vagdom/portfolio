@@ -3,13 +3,13 @@
 //From: Starting Out with C++
 //Author: Tony Gaddis
 
-#include <iomanip>
+#include <iostream>
 #include <iomanip>
 
 using namespace std;
 
 //Function prototypes
-void shoeMenu();
+void showMenu();
 void showFees(double, int);
 
 int main()
