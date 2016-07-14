@@ -37,9 +37,9 @@ int main()
       cout << "Enter the following data about a "
            << "person:\n";
       cout << "Name: ";
-      cin.getline(eprson.name, NAME_SIZE);
+      cin.getline(person.name, NAME_SIZE);
       cout << "Age: ";
-      cin >> peson.age;
+      cin >> person.age;
       cin.ignore(); //Skip over the remaining newline
       cout << "Address line 1: ";
       cin.getline(person.address1, ADDR_SIZE);
