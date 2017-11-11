@@ -1,5 +1,14 @@
 //From: Data Structures Using C++
 //Author: D. S. Malik
+
+//Header file personType.h
+#ifndef H_personType
+#define H_personType
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 class personType
 {
 public:
@@ -45,3 +54,4 @@ private:
   
   
 };
+#endif
