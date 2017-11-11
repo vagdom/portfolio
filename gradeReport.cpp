@@ -46,7 +46,20 @@ int main()
   
 }
   
-
+void getStudentData(ifstream& infile, vector<studentType> &studentList)
+{
+  //local variables
+  string fName;           //variable to store first name
+  string lName;           //variable to store last name
+  int ID;                 //variable to store student ID
+  int noOfCourses;        //variable to store number of courses
+  char isPaid;            //variable to store Y/N (If the student has paid the courses)
+  bool isTuitionPaid;     //variable to store true/false
+  string cName;           //variable to store course name
+  string cNo;             //variable to store course number
+  int credits;            //variable to store course credit hours
+  char grade;             //variable to store course grade
+  int i;                  //loop control variable
 
 
 
