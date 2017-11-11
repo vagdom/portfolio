@@ -49,18 +49,45 @@ int main()
 void getStudentData(ifstream& infile, vector<studentType> &studentList)
 {
   //local variables
-  string fName;           //variable to store first name
-  string lName;           //variable to store last name
-  int ID;                 //variable to store student ID
-  int noOfCourses;        //variable to store number of courses
-  char isPaid;            //variable to store Y/N (If the student has paid the courses)
-  bool isTuitionPaid;     //variable to store true/false
-  string cName;           //variable to store course name
-  string cNo;             //variable to store course number
-  int credits;            //variable to store course credit hours
-  char grade;             //variable to store course grade
-  int i;                  //loop control variable
+  string fName;               //variable to store first name
+  string lName;               //variable to store last name
+  int ID;                     //variable to store student ID
+  int noOfCourses;            //variable to store number of courses
+  char isPaid;                //variable to store Y/N (If the student has paid the courses)
+  bool isTuitionPaid;         //variable to store true/false
+  string cName;               //variable to store course name
+  string cNo;                 //variable to store course number
+  int credits;                //variable to store course credit hours
+  char grade;                 //variable to store course grade
+  int i;                      //loop control variable
 
-
+  vector<courseType> courses; //vector of objects to store the course information
+  
+  courseType cTemp;
+  studentType sTemp;
+  
+  while(infile)
+  {
+    infile >> lName >> ID >> isPaid;
+    
+    if(isPaid == 'Y'
+       isTuitionPaid = true;
+    else
+       isTuitionPaid = false;
+    
+    infile >> noOfCourses;
+    
+    courses.clear();
+       
+    for(i = 0; i < noOfcourses; i++)
+       {
+         infile >> cName >> cNo >> credits >> grade;
+         cTemp.setcourseInfo(cName, cNo, grade, credits);
+         courses.push_back(cTemp);
+       }
+       
+    sTemp.setInfo(fName, lName, ID, isTuitionPaid, courses);
+       
+    infile >> fName;
 
 }
