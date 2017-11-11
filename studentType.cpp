@@ -1,3 +1,15 @@
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <iterator>
+
+#include "personType.h"
+#include "courseType.h"
+#include "studentType.h"
+
 void studentType::setInfo(string fName, string lNmae, int ID,
                           bool isTPaid,
                           vector<courseType> courses)
