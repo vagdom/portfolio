@@ -1,3 +1,9 @@
+//Header file studentType.h
+#ifndef H_studentType
+#define H_studentType
+#include <fstream>
+#include <string>
+#include <vector>
 class studentType: public personType
 {
 public:
@@ -44,3 +50,4 @@ private:
   vector<courseType> coursesEnrolled;   //vector to store the courses
   
   };
+#endif
