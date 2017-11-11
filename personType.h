@@ -4,7 +4,6 @@
 //Header file personType.h
 #ifndef H_personType
 #define H_personType
-#include <iostream>
 #include <string>
 
 using namespace std;
