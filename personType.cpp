@@ -2,6 +2,8 @@
 //Author: D. S. Malik
 
 #include <iostream>
+#include <string>
+#include "personType.h"
 
 using namespace std;
 
