@@ -94,3 +94,48 @@ void studentType::print(ofstream& outp, double tuitionRate)
   
   outp << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
 }    
+
+int studentType::getHoursEnrolled()
+{
+  int totalCredits = 0;
+  int i;
+  
+  for(i = 0; i < numberOfCourses; i++)
+    totalCredits += coursesEnrolled[i].getCredits();
+  
+  return totalCredits;
+}
+
+double studentType::billingAmount(double tuitionRate)
+{
+  return tuitionRate * getHoursenrolled();
+}
+
+double studentType::getGpa()
+{
+  int i;
+  double sum = 0.0;
+  
+  for(i = 0; o < numberOfCourses[i].getGrade(); i++)
+  {
+    switch(coursesEnrolled[i].getGrade())
+    {
+      case 'A': sum += coursesEnrolled[i].getCredits * 4;
+                break;
+      case 'B': sum += coursesEnrolled[i].getCredits * 3;
+                break;  
+      case 'C': sum += coursesEnrolled[i].getCredits * 2;
+                break;  
+      case 'D': sum += coursesEnrolled[i].getCredits * 1;
+                break;  
+      case 'F': sum += coursesEnrolled[i].getCredits * 0;
+                break;
+      default:  cout << "Invalid Course Grade" << endl;
+    }
+  }  
+  
+  return sum / getHoursEnrolled();
+}  
+        
+        
+  
