@@ -91,3 +91,15 @@ void getStudentData(ifstream& infile, vector<studentType> &studentList)
     infile >> fName;
 
 }
+
+void printGradeReports(ofstream& outfile, vector<studentType> studentList, double tuitionRate)
+{
+  unsigned int count;
+  
+  for(count = 0; count < studentList.size(); count++)
+  {
+    studentList[count].print(outfile, tuitionRate);
+  }
+  
+}
+         
