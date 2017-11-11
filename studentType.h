@@ -4,6 +4,10 @@
 #include <fstream>
 #include <string>
 #include <vector>
+
+#include "personType.h"
+#include "courseType.h"
+
 class studentType: public personType
 {
 public:
