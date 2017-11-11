@@ -1,3 +1,12 @@
+//header file courseType.h
+#ifndef H_courseType
+#define H_courseType
+
+#include <fstream>
+#include <string>
+
+using namespace std;
+
 class courseType
 {
 public:
@@ -65,3 +74,4 @@ public:
   int courseName;                     //variable to store the number of credits 
   
 }
+#endif
