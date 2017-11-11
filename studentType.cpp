@@ -56,4 +56,41 @@ void studentType::print(double tuitionRate)
   cout << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
 }
   
+void studentType::print(ofstream& outp, double tuitionRate)
+{
+  int i;
+  string first;
+  string last;
+  
+  personType::getName(first, last);
+  
+  outp << "Student Name: " << first << " " << last << endl;
+  
+  outp << "Student ID: " << sId << endl;
     
+  outp <<"Number of courses enrolled: " << numberOfCourses << endl;
+  outp << endl;
+  
+  outp << left;
+  outp << "Course No" << setw(15) << "  Course Name" << setw(08) << "Credits" << setw(06) << "Grade" << endl;
+  
+  outp.unsetf(ios::left);
+  
+  for(i = 0; i < numberOfCourses; i++)
+    coursesEnrolled[i].print(outp, isTuitionPaid);
+  outp << endl;
+  
+  outp << "Total number of credit hours: " << getHoursEnrolled() << endl;
+  
+  outp << fixed << showpoint << setprecision(2);
+  
+  if(isTuitionPaid)
+    outp << "midsemester GPA: " << getGpa() << endl;
+  else
+  {
+    outp << "*** Grades are being held for not paying the tuition. ***" << endl;
+    outp << "Amount Due: $" << billingAmount(tuitionRate) << endl;
+  }
+  
+  outp << "_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_" << endl;
+}    
