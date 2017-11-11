@@ -5,6 +5,8 @@
 #include <vector>
 #include <iterator>
 
+#include "studentType.h"
+
 //Function prototypes
 void getStudentData(ifstream& infile, vector<studentType> &studentList);
 
