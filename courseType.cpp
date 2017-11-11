@@ -1,3 +1,12 @@
+//Implementation of the class courseType.cpp
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+#include "courseType.h"
+
+using namespace std;
+
 void couseType::setCourseInfo(string cName, string cNO,
                               char grade, int credits)
 {
